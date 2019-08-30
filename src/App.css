@@ -27,6 +27,9 @@ h1{
   font-family: 'CitonLightDB Normal';
   font-weight: 500;
 }
+h5{
+  font-size: 1.05rem;
+}
 /* RecipeSearch */
 
 .recipeSearch_input{
