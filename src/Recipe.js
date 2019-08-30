@@ -23,7 +23,7 @@ const Recipe =({id,publisher,title,img_url,source_url,error})=>{
               
                 <button 
                      type="button" 
-                     className="btn btn-outline-danger text-capitalize">
+                     className="btn btn-outline-danger mx-2 text-capitalize">
                      <Link style={{textDecoration:'none'}}to={{
                      pathname:`/recipedetails/${id}`,
                       state:{title}
@@ -31,7 +31,7 @@ const Recipe =({id,publisher,title,img_url,source_url,error})=>{
                     }}> Recipe Details</Link>
                </button>
                <a   href={source_url} 
-                    className="btn btn-outline-success mx-4 text-capitalize my-2"
+                    className="btn btn-outline-success mx-2 text-capitalize my-2"
                     target='_blank' rel="noopener noreferrer" >
                     Source url
               </a>

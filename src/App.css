@@ -53,3 +53,13 @@ h1{
 
 }
 
+@media screen and (max-width:480px) {
+
+  .recipeSearch_input{
+    width: 40%;
+    padding: 0.2rem;
+  }
+}
+
+  
+  
