@@ -56,6 +56,10 @@ h5{
 
 }
 
+button:focus{
+  outline: none;
+}
+
 @media screen and (max-width:480px) {
 
   .recipeSearch_input{
