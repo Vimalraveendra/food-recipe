@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/food-recipe/static/css/main.77c6e669.chunk.css",
-    "main.js": "/food-recipe/static/js/main.fb0a0701.chunk.js",
-    "main.js.map": "/food-recipe/static/js/main.fb0a0701.chunk.js.map",
-    "runtime~main.js": "/food-recipe/static/js/runtime~main.f99d16f5.js",
-    "runtime~main.js.map": "/food-recipe/static/js/runtime~main.f99d16f5.js.map",
-    "static/js/2.a0860713.chunk.js": "/food-recipe/static/js/2.a0860713.chunk.js",
-    "static/js/2.a0860713.chunk.js.map": "/food-recipe/static/js/2.a0860713.chunk.js.map",
+    "main.css": "/food-recipe/static/css/main.542fdb3d.chunk.css",
+    "main.js": "/food-recipe/static/js/main.c32a001c.chunk.js",
+    "main.js.map": "/food-recipe/static/js/main.c32a001c.chunk.js.map",
+    "runtime-main.js": "/food-recipe/static/js/runtime-main.bb94feec.js",
+    "runtime-main.js.map": "/food-recipe/static/js/runtime-main.bb94feec.js.map",
+    "static/js/2.53c54ff7.chunk.js": "/food-recipe/static/js/2.53c54ff7.chunk.js",
+    "static/js/2.53c54ff7.chunk.js.map": "/food-recipe/static/js/2.53c54ff7.chunk.js.map",
     "index.html": "/food-recipe/index.html",
-    "precache-manifest.054ec38d77b5306b0946becf75ef2b71.js": "/food-recipe/precache-manifest.054ec38d77b5306b0946becf75ef2b71.js",
+    "precache-manifest.718fca34e5ae1c321f715ebf5df5352b.js": "/food-recipe/precache-manifest.718fca34e5ae1c321f715ebf5df5352b.js",
     "service-worker.js": "/food-recipe/service-worker.js",
-    "static/css/main.77c6e669.chunk.css.map": "/food-recipe/static/css/main.77c6e669.chunk.css.map",
+    "static/css/main.542fdb3d.chunk.css.map": "/food-recipe/static/css/main.542fdb3d.chunk.css.map",
+    "static/js/2.53c54ff7.chunk.js.LICENSE.txt": "/food-recipe/static/js/2.53c54ff7.chunk.js.LICENSE.txt",
     "static/media/App.css": "/food-recipe/static/media/citonl.7882912c.woff"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb94feec.js",
+    "static/js/2.53c54ff7.chunk.js",
+    "static/css/main.542fdb3d.chunk.css",
+    "static/js/main.c32a001c.chunk.js"
+  ]
 }
