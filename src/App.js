@@ -48,6 +48,7 @@ class App extends Component {
           this.setState({
             recipes: data.hits,
             recipeName: "",
+            error: "",
           });
         } else {
           this.setState({
@@ -75,6 +76,7 @@ class App extends Component {
   // }
 
   render() {
+    console.log("recipes", this.state.recipes);
     return (
       <React.Fragment>
         <div>
@@ -82,7 +84,6 @@ class App extends Component {
             <h1 className="App-title ">Recipe Search</h1>
           </header>
           <RecipeSearch
-            getRecipe={this.getRecipe}
             recipeName={this.state.recipeName}
             onSearchChange={this.onSearchChange}
             handleSubmit={this.handleSubmit}
