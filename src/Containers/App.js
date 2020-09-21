@@ -75,7 +75,6 @@ class App extends Component {
   }
 
   render() {
-    console.log("recipes", this.state.recipes);
     return (
       <React.Fragment>
         <div>
