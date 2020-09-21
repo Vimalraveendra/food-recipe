@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Recipe = ({ id, publisher, title, img_url, source_url, ingredients }) => {
-  console.log("id", id);
   return (
     <React.Fragment>
       <div className="col-10 mx-auto col-md-6  col-lg-4 my-3">
