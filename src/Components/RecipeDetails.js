@@ -21,6 +21,7 @@ class RecipeDetails extends Component {
   render() {
     const {
       img_url,
+
       source_url,
       title,
       ingredients,
@@ -35,9 +36,7 @@ class RecipeDetails extends Component {
             <div className="col-10 mx-auto col-md-6 my-3">
               <h3 className="text-info">Recipe Details</h3>
               <img className="d-block w-100" src={img_url} alt={title} />
-
               <h4 className="text_uppercase text-danger my-3">Title:{title}</h4>
-
               {ingredients.map((item) => {
                 return (
                   <ul key={uuidv4()} className="ingredient_list">
