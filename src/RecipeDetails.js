@@ -1,19 +1,32 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 class RecipeDetails extends Component {
   state = {
     recipe: [],
   };
 
-  componentDidMount = () => {
-    this.setState({
-      recipe: this.props.location.state,
-    });
-  };
+  //   componentDidMount = async ()=>{
+
+  //   const title= this.props.location.state.title
+  //   const resp = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=30`)
+  //   const data = await resp.json()
+  //   this.setState({
+  //       recipe:data.recipes[0]
+
+  //   })
+
+  // }
   render() {
-    console.log("state", this.state.recipe);
-    const { img_url, publisher, source_url, title } = this.state.recipe;
+    const {
+      img_url,
+      source_url,
+      title,
+      ingredients,
+    } = this.props.location.state;
+
+    console.log("ing", ingredients);
 
     return (
       <React.Fragment>
@@ -24,7 +37,15 @@ class RecipeDetails extends Component {
               <img className="d-block w-100" src={img_url} alt={title} />
 
               <h4 className="text_uppercase text-danger my-3">Title:{title}</h4>
-              <h5 className="text-warning">Publisher:{publisher}</h5>
+
+              {ingredients.map((item) => {
+                return (
+                  <ul key={uuidv4()} className="ingredient_list">
+                    <li className="ingredient_text">{item.text}</li>
+                  </ul>
+                );
+              })}
+
               <p>
                 Website:
                 <span>
