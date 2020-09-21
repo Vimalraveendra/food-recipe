@@ -28,7 +28,13 @@ const Recipe = ({ id, publisher, title, img_url, source_url, ingredients }) => {
                 style={{ textDecoration: "none" }}
                 to={{
                   pathname: `/recipedetails/${id}`,
-                  state: { title },
+                  state: {
+                    publisher,
+                    title,
+                    img_url,
+                    source_url,
+                    ingredients,
+                  },
                 }}
               >
                 {" "}

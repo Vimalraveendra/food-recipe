@@ -2,7 +2,6 @@ import React from "react";
 
 const RecipeSearch = ({
   onSearchChange,
-
   recipeName,
   handleSubmit,
 }) => {
