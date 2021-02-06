@@ -9,8 +9,7 @@ const RecipeList = ({ recipes, error }) => {
         <div className="row">
           {error ? (
             <h2 className=" text-danger text-center">{error}</h2>
-          ) : (
-            recipes.map((item, index) => {
+          ) : (recipes &&recipes.map((item, index) => {
               return (
                 <Recipe
                   key={uuidv4()}

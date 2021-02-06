@@ -53,6 +53,7 @@ class App extends Component {
         } else {
           this.setState({
             error: "Sorry! Please enter a valid recipeName",
+            recipeName: "",
           });
         }
       }
