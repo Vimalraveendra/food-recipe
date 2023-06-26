@@ -9,7 +9,7 @@ const APP_ID = process.env.REACT_APP_API_ID;
 class App extends Component {
   state = {
     recipes: [],
-    recipeName: "",
+    recipeName: "Chicken",
     error: "",
   };
 
