@@ -7,7 +7,7 @@ const Recipe = ({ id, publisher, title, img_url, source_url, ingredients }) => {
       <div className="col-10 mx-auto col-md-6  col-lg-4 my-3">
         <div className="card">
           <img
-            className="card-img-top"
+            className="card-img-top recipe-img"
             src={img_url}
             alt={title}
             style={{ height: "15rem" }}
@@ -45,6 +45,11 @@ const Recipe = ({ id, publisher, title, img_url, source_url, ingredients }) => {
               className="btn btn-outline-success mx-2 text-capitalize my-2"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                maxWidth: "130px",
+                width: "100%",
+              }}
             >
               Source url
             </a>

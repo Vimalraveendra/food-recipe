@@ -1,10 +1,6 @@
 import React from "react";
 
-const RecipeSearch = ({
-  onSearchChange,
-  recipeName,
-  handleSubmit,
-}) => {
+const RecipeSearch = ({ onSearchChange, recipeName, handleSubmit }) => {
   return (
     <React.Fragment>
       <div className="container">

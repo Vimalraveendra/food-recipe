@@ -13,21 +13,6 @@ class App extends Component {
     error: "",
   };
 
-  // componentDidMount = async () => {
-  //   try {
-  //     const api_call = await fetch(
-  //       `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=30`
-  //     );
-  //     const resp = await api_call.json();
-
-  //     this.setState({
-  //       recipes: resp.hits,
-  //     });
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
-
   onSearchChange = (e) => {
     const recipeName = e.target.value;
     this.setState({
@@ -41,7 +26,7 @@ class App extends Component {
       const { recipeName } = this.state;
       if (recipeName.length > 0) {
         const resp = await fetch(
-          `https://api.edamam.com/search?q=${recipeName}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=30`
+          `https://api.edamam.com/api/recipes/v2?q=${recipeName}&app_id=${APP_ID}&app_key=${API_KEY}&type=public`,
         );
         const data = await resp.json();
         if (data.hits.length !== 0) {
