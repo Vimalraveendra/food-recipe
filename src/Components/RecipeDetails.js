@@ -7,17 +7,6 @@ class RecipeDetails extends Component {
     recipe: [],
   };
 
-  //   componentDidMount = async ()=>{
-
-  //   const title= this.props.location.state.title
-  //   const resp = await fetch(`https://api.edamam.com/search?q=${recipeName}&app_id=${APP_ID}&app_key=${API_KEY}&from=0&to=30`)
-  //   const data = await resp.json()
-  //   this.setState({
-  //       recipe:data.recipes[0]
-
-  //   })
-
-  // }
   render() {
     const {
       img_url,
