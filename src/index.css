@@ -16,3 +16,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* RecipeSearch */
+
+.input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 2px #9b344e;
+  margin-right: 10px;
+  width: 50%;
+  padding: 0.4rem;
+  text-align: center;
+  outline: none;
+}
+.btn{
+  border: solid 2px #5e2971;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  margin: 0.6rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 0.8rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+.ingredient_list {
+  margin-top: 0.5 rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  list-style-type: none;
+}
+
+.ingredient_list li {
+  margin: 0.25rem 0;
+}
+
+.ingredient_text {
+  font-size: 1rem;
+  color: #888;
+}
+.recipe-img {
+  object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  .input {
+    width: 40%;
+    padding: 0.2rem;
+  }
+}
