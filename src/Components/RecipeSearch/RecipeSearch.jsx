@@ -15,7 +15,7 @@ const RecipeSearch = ({ onSearchChange, recipeName, handleSubmit }) => {
               onChange={onSearchChange}
               className="input"
             />
-            <button className="btn">search</button>
+            <button className="btn btn--search">search</button>
           </form>
         </div>
       </div>
