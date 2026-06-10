@@ -2,7 +2,7 @@ import React from "react";
 
 const RecipeSearch = ({ onSearchChange, recipeName, handleSubmit }) => {
   return (
-    <div className="container">
+    <div className="container mt-4">
       <div className="row">
         <div className="col-10 mx-auto col-md-6 col-lg-4">
           <form onSubmit={handleSubmit}>
