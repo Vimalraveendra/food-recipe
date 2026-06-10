@@ -1,5 +1,5 @@
 import React from "react";
-import RecipeCard from "../../Components/RecipeCard";
+import RecipeCard from "../../Components/RecipeCard/RecipeCard";
 
 const RecipeList = ({ loading, recipes, error }) => {
   return (
