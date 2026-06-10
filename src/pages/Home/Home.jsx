@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import RecipeSearch from "../../Components/RecipeSearch";
+import RecipeSearch from "../../Components/RecipeSearch/RecipeSearch";
 import "./Home.css";
-import RecipeList from "../../Components/RecipeList";
+import RecipeList from "../../Components/RecipeList/RecipeList";
 import { fetchRecipes } from "../../api/recipes";
 
 class Home extends Component {
