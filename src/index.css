@@ -81,6 +81,11 @@ h5 {
   text-align: center;
   outline: none;
 }
+input:focus {
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
 
 .btn-container{
    display: flex;
