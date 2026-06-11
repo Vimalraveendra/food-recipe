@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const RecipeCard = ({ recipe }) => {
   const { label, source, image, url } = recipe;
+  const history = useHistory();
   const handleViewDetails = () => {
     sessionStorage.setItem("selectedRecipe", JSON.stringify(recipe));
+    history.push("/recipe-details", recipe);
   };
   return (
     <div className="col-10 mx-auto col-md-6  col-lg-4 my-3">
@@ -24,17 +26,13 @@ const RecipeCard = ({ recipe }) => {
           </h5>
           <p className=" card-text text-warning">Publisher:{source}</p>
           <div className="btn-container">
-            <Link
-              className="btn btn-outline-primary  text-capitalize "
-              style={{ textDecoration: "none" }}
-              to={{
-                pathname: `/recipe-details`,
-                state: recipe,
-              }}
+            <button
+              className="btn btn-outline-primary  text-capitalize"
               onClick={handleViewDetails}
             >
               Recipe Details
-            </Link>
+            </button>
+
             <a
               href={url}
               className="btn btn-outline-secondary text-capitalize "
