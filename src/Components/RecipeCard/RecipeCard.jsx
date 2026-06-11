@@ -6,7 +6,10 @@ const RecipeCard = ({ recipe }) => {
   const history = useHistory();
   const handleViewDetails = () => {
     sessionStorage.setItem("selectedRecipe", JSON.stringify(recipe));
-    history.push("/recipe-details", recipe);
+    history.push({
+      pathname: "/recipe-details",
+      state: recipe,
+    });
   };
   return (
     <div className="col-10 mx-auto col-md-6  col-lg-4 my-3">
