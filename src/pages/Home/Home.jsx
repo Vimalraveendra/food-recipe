@@ -5,6 +5,7 @@ import RecipeList from "../../Components/RecipeList/RecipeList";
 import { fetchRecipes } from "../../api/recipes";
 
 class Home extends Component {
+  _isMounted = false;
   state = {
     recipes: [],
     recipeName: "Chicken",
@@ -23,14 +24,14 @@ class Home extends Component {
     this.setState({ loading: true, error: "" });
     try {
       const data = await fetchRecipes(query);
+      if (!this._isMounted) return;
       const recipes = data ?? [];
-      console.log("recipes", recipes);
       this.setState({ loading: false, recipes, error: "" });
     } catch (error) {
       this.setState({
         loading: false,
         recipes: [],
-        error: "Sorry! Please enter a valid recipeName",
+        error: "Please enter a valid recipe name",
         recipeName: "",
       });
     }
@@ -45,14 +46,18 @@ class Home extends Component {
       this.setState({
         loading: false,
         recipes: [],
-        error: "Please enter a valid recipeName",
+        error: "Please enter a valid recipe name",
         recipeName: "",
       });
     }
   };
 
   componentDidMount() {
+    this._isMounted = true;
     this.fetchRecipesData(this.state.recipeName);
+  }
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   render() {
